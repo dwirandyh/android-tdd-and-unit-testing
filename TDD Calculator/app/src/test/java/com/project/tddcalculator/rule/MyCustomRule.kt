@@ -5,6 +5,9 @@ import org.junit.runner.Description
 import org.junit.runners.model.Statement
 import java.util.logging.Logger
 
+/**
+ * for case study we can use this method if you wanna use like database instance, or other class that you are used often
+ */
 class MyCustomRule : TestRule {
 
     var logger: Logger? = null
