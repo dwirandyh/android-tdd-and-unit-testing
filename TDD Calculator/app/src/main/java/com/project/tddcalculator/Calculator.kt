@@ -1,5 +1,7 @@
 package com.project.tddcalculator
 
+import java.lang.IllegalArgumentException
+
 class Calculator {
 
     fun add(a: Int, b: Int): Int {
@@ -10,11 +12,12 @@ class Calculator {
         return a * b
     }
 
-    fun multiplication(a: Int, b: Int) : Int {
+    fun multiplication(a: Int, b: Int): Int {
         return a * b
     }
 
     fun divide(a: Int, b: Int): Int {
-        return a/b
+        if (b == 0) throw IllegalArgumentException("This can not divided by Zero Number")
+        return a / b
     }
 }

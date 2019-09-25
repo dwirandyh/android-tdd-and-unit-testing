@@ -1,7 +1,9 @@
 package com.project.tddcalculator
 
 import junit.framework.Assert.assertEquals
+import org.junit.Ignore
 import org.junit.Test
+import java.lang.IllegalArgumentException
 
 class CalculatorTest {
 
@@ -34,12 +36,16 @@ class CalculatorTest {
     }
 
 
-    @Test
+    /**
+     * This function is used to handle exception
+     * Result of the function must IllegalArgumentException Class
+     */
+    @Ignore("test DivisionByZeroNumber is Ignored")
+    @Test(expected = IllegalArgumentException::class)
     fun testDivisionByZeroNumber(){
         val calculator = Calculator()
         val result: Int = calculator.divide(30, 0)
         assertEquals(3, result)
     }
-
 
 }
