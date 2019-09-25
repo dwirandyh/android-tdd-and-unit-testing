@@ -40,4 +40,6 @@ class CalculatorTest {
         val result: Int = calculator.divide(30, 0)
         assertEquals(3, result)
     }
+
+
 }
