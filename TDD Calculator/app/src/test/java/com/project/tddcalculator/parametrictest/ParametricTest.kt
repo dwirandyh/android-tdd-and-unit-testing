@@ -1,12 +1,10 @@
 package com.project.tddcalculator.parametrictest
 
-import com.project.tddcalculator.Calculator
+import com.project.tddcalculator.unittesting.Calculator
 import junit.framework.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.Parameterized
-import java.util.*
-import kotlin.reflect.jvm.internal.impl.load.kotlin.JvmType
 
 @RunWith(Parameterized::class)
 class ParametricTest(

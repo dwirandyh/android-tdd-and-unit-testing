@@ -1,6 +1,6 @@
 package com.project.tddcalculator.simpletest
 
-import com.project.tddcalculator.Calculator
+import com.project.tddcalculator.unittesting.Calculator
 import junit.framework.Assert.assertEquals
 import org.junit.*
 import java.lang.IllegalArgumentException
